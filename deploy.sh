@@ -9,11 +9,16 @@ npm run build
 # 进入构建输出目录
 cd dist
 
+# 初始化 git
 git init
+
+# 添加所有文件
 git add -A
+
+# 提交
 git commit -m 'deploy'
 
-# 使用 HTTPS URL 并确保分支名称正确
-git push -f https://github.com/helpfulcraft/helpfulcraft.github.io.git main:main
+# 推送到 master 分支（注意：这里使用 master 而不是 main）
+git push -f https://github.com/helpfulcraft/helpfulcraft.github.io.git master:master
 
 cd -

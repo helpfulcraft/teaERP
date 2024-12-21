@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --heading-color: rgba(0, 0, 0, 0.85);
+  --text-color: rgba(0, 0, 0, 0.65);
+  --text-color-secondary: rgba(0, 0, 0, 0.45);
+  --border-color: #f0f0f0;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 全局过渡动画 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 数据概览卡片通用样式 */
+.overview-card {
+  position: relative;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.overview-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.card-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.card-icon .el-icon {
+  font-size: 24px;
+  color: white;
+}
+
+/* 图表卡片通用样式 */
+.chart-card {
+  margin-bottom: 24px;
+}
+
+.chart-card .chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chart-container {
+  height: 300px;
+  padding: 20px;
+}
+
+/* 表格通用样式 */
+.el-table th {
+  background-color: #fafafa !important;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+.el-table td {
+  color: var(--text-color);
+}
+
+/* 分页器通用样式 */
+.pagination {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 对话框通用样式 */
+.el-dialog__header {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+}
+
+.el-dialog__footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+/* 表单通用样式 */
+.el-form-item__label {
+  font-weight: 500;
+  color: var(--heading-color);
+} 

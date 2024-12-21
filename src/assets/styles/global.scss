@@ -1,0 +1,109 @@
+// 全局变量
+:root {
+  --primary-color: #1890ff;
+  --success-color: #52c41a;
+  --warning-color: #faad14;
+  --error-color: #f5222d;
+  --font-size-base: 14px;
+  --border-radius-base: 4px;
+  --box-shadow-base: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+// 全局样式
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #f0f2f5;
+}
+
+// Element Plus 样式覆盖
+.el-card {
+  border-radius: var(--border-radius-base);
+  border: none;
+  box-shadow: var(--box-shadow-base);
+  
+  .el-card__header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+}
+
+.el-table {
+  border-radius: var(--border-radius-base);
+  
+  th {
+    background-color: #fafafa !important;
+  }
+}
+
+.el-button {
+  border-radius: var(--border-radius-base);
+  
+  &.el-button--primary {
+    background-color: var(--primary-color);
+  }
+}
+
+// 通用组件样式
+.page-header {
+  margin-bottom: 24px;
+  
+  .title {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  
+  .description {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+.toolbar {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .left {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .right {
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.data-overview {
+  margin-bottom: 24px;
+  
+  .overview-card {
+    height: 100%;
+    
+    .card-title {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 14px;
+    }
+    
+    .card-value {
+      margin-top: 4px;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    
+    .card-footer {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+} 

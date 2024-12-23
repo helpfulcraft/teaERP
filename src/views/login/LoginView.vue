@@ -2,7 +2,6 @@
   <div class="login-container">
     <div class="login-content">
       <div class="login-header">
-        <img src="@/assets/logo.svg" alt="logo" class="logo">
         <h2>云垦茶业ERP系统</h2>
       </div>
       
@@ -126,17 +125,12 @@ export default {
   margin-bottom: 40px;
 }
 
-.logo {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 16px;
-}
-
 .login-header h2 {
   margin: 0;
   color: var(--heading-color);
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
+  padding: 20px 0;
 }
 
 .login-form {

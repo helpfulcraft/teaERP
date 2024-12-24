@@ -34,5 +34,8 @@
       "src": "/(.*)",
       "headers": { "cache-control": "s-maxage=3600" }
     }
-  ]
+  ],
+  "github": {
+    "silent": false
+  }
 }

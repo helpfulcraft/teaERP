@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { SpeedInsights } from "@vercel/speed-insights/vue"
+import { inject } from '@vercel/speed-insights'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import 'element-plus/dist/index.css'
@@ -16,6 +16,8 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 app.use(ElementPlus)
 app.use(router)
-app.use(SpeedInsights)
+
+// 注入 Speed Insights
+inject()
 
 app.mount('#app')
